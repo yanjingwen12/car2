@@ -20,6 +20,13 @@ public class YuDing extends HttpServlet {
 	   switch(method) {
 	   case"listAll":{
 		   System.out.println("查询显示所有后台方法");
+		   //调运dao方法查询所有的预定信息
+		   List<YuDing> yudings = dao.listAll();
+		   System.out.println(yudings.size());
+		   //将查询出来的数据储存到request范围内
+		   request.setAttribute("yudings",yudings);
+		   //跳转到显示所有预定信息的jsp页面上
+		   request.getRequestDispatcher("YuDing_list.jsp").forward(request,response);
 		   	   break;
 	   } case"addYu":{
 		   System.out.println("添加预订方法");

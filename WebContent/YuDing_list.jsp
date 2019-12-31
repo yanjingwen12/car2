@@ -119,15 +119,14 @@
       </section>
       <table class="table">
        <tr>
-        <th>Id</th>
-        <th>会员头像</th>
-        <th>会员账号</th>
-        <th>手机号码</th>
-        <th>电子邮件</th>
-        <th>验证</th>
-        <th>会员等级</th>
-        <th>账户余额</th>
-        <th>冻结资金</th>
+        <th>头像</th>
+        <th>用户身份证Id</th>
+        <th>姓名</th>
+        <th>车辆ID</th>
+        <th>电话</th>
+        <th>qq</th>
+        <th>微信</th>
+        <th>地址</th>
         <th>操作</th>
        </tr>
        <tr>
