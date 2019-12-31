@@ -1,3 +1,4 @@
+<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%><!DOCTYPE html>
 <html>
 <head>
@@ -129,45 +130,7 @@
         <th>地址</th>
         <th>操作</th>
        </tr>
-       <tr>
-        <td class="center">001</td>
-        <td class="center"><img src="upload/user_002.png" width="50" height="50"/></td>
-        <td>DeathGhost</td>
-        <td class="center">18300000000</td>
-        <td class="center">deathghost@sina.cn</td>
-        <td class="center"><a title="已验证" class="link_icon">&#89;</a></td>
-        <td class="center">普通会员</td>
-        <td class="center">
-         <strong class="rmb_icon">5559.00</strong>
-        </td>
-        <td class="center">
-         <strong class="rmb_icon">59.00</strong>
-        </td>
-        <td class="center">
-         <a href="user_detail.html" title="编辑" class="link_icon">&#101;</a>
-         <a href="#" title="删除" class="link_icon">&#100;</a>
-        </td>
-       </tr>
-       <tr>
-        <td class="center">002</td>
-        <td class="center"><img src="upload/user_001.png" width="50" height="50"/></td>
-        <td>DeathGhost02</td>
-        <td class="center">15800000000</td>
-        <td class="center">232650413@sina.cn</td>
-        <td class="center"><a title="未验证" class="link_icon">&#88;</a></td>
-        <td class="center">高级会员</td>
-        <td class="center">
-         <strong class="rmb_icon">199.00</strong>
-        </td>
-        <td class="center">
-         <strong class="rmb_icon">15.00</strong>
-        </td>
-        <td class="center">
-         <a href="user_detail.html" title="编辑" class="link_icon">&#101;</a>
-         <a href="#" title="删除" class="link_icon">&#100;</a>
-        </td>
-       </tr>
-      </table>
+       <%List<com.Cars.Model.YuDing> yudings=(List<com.Cars.Model.YuDing>)request.getAttribute("yudings"); %>
       <aside class="paging">
        <a>第一页</a>
        <a>1</a>
